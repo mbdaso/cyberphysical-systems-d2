@@ -37,6 +37,9 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_I3wyIDkgEeqtR9ldc2U3dA" name="Police">
       <packagedElement xmi:type="uml:Class" xmi:id="_9ow8YDkaEeq9QJJQLLZM_A" name="Police">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LXArgD3xEeqC3MJr-A7mSQ">
+          <body>Juliana Mejía</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_2oOC0DwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_K8-Vwj0_EeqC3MJr-A7mSQ" name="police vehicle" type="_Hsp5sD0tEeqC3MJr-A7mSQ" aggregation="composite" association="_K89usD0_EeqC3MJr-A7mSQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8_j4D0_EeqC3MJr-A7mSQ" value="1"/>
