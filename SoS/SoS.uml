@@ -24,6 +24,7 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_et--4DkdEeq9QJJQLLZM_A" name="Fire Fight">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_xX8cADwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_6K_mkDyfEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JNCzwD1AEeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_JNAXgD1AEeqzgpxG2553pg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2ub1QDkfEeqtR9ldc2U3dA" name="GPS"/>
@@ -33,6 +34,7 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_Gard8DkbEeq9QJJQLLZM_A" name="Car">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_g--CcDwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9MsgMDyjEeqttOmlBllrsQ" name="information_car" type="_v88W0DyiEeqttOmlBllrsQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Calogj1AEeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_CakaYD1AEeqzgpxG2553pg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_I3wyIDkgEeqtR9ldc2U3dA" name="Police">
@@ -43,6 +45,7 @@
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_2oOC0DwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_tYfkcDyfEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8b9t8D0_EeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_8b5cgD0_EeqzgpxG2553pg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vX4aQDuXEeqs6tazo8uw6g" name="PC "/>
       <packagedElement xmi:type="uml:Association" xmi:id="_xzYzYDuXEeqs6tazo8uw6g" memberEnd="_xzaBgTuXEeqs6tazo8uw6g _xzbPoTuXEeqs6tazo8uw6g">
@@ -54,39 +57,55 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_NeQcIDkgEeqtR9ldc2U3dA" name="Drone">
       <packagedElement xmi:type="uml:Class" xmi:id="__ijIgDkaEeq9QJJQLLZM_A" name="Drone">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_wzrb4DwxEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_UrI8gDw0Eeq9r43XwoIdDg" name="image_out" aggregation="composite">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_wzrb4DwxEeq9r43XwoIdDg" name="position_inout" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_UrI8gDw0Eeq9r43XwoIdDg" name="image_out" type="_Nf6XYDyhEeqttOmlBllrsQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="__6UEYDygEeqttOmlBllrsQ" name="position" type="_Xw6ikDygEeqttOmlBllrsQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Eek5wDyhEeqttOmlBllrsQ" name="image_insident" type="_Nf6XYDyhEeqttOmlBllrsQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kxmSwD0xEeqqebxJtEajNg" name="image" type="_YHzgsD0xEeqqebxJtEajNg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fMxP4D0_EeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_fMp7ID0_EeqzgpxG2553pg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_QZ68ADkgEeqtR9ldc2U3dA" name="Ecall">
       <packagedElement xmi:type="uml:Class" xmi:id="_vj20ADkWEeq9QJJQLLZM_A" name="Ecall">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_PqVR4DwwEeq9r43XwoIdDg" name="position_out" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_LTvIQDw0Eeq9r43XwoIdDg" name="image_in" aggregation="composite">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_LTvIQDw0Eeq9r43XwoIdDg" name="image_in" type="_Nf6XYDyhEeqttOmlBllrsQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ltGbgDyeEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_T8VdcD0_EeqzgpxG2553pg" name="car crane" type="_I4dvADkbEeq9QJJQLLZM_A" association="_T8ICED0_EeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fMuzoD0_EeqzgpxG2553pg" name="drone" type="__ijIgDkaEeq9QJJQLLZM_A" association="_fMp7ID0_EeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qoWiYT0_EeqzgpxG2553pg" name="search resuce" type="_zizuIDkcEeq9QJJQLLZM_A" association="_qoTfED0_EeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wuFxkj0_EeqzgpxG2553pg" name="medical" type="_CTC6MDkbEeq9QJJQLLZM_A" association="_wuEjcD0_EeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8b74wT0_EeqzgpxG2553pg" name="police" type="_9ow8YDkaEeq9QJJQLLZM_A" association="_8b5cgD0_EeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CalogT1AEeqzgpxG2553pg" name="car" type="_Gard8DkbEeq9QJJQLLZM_A" association="_CakaYD1AEeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JNCMsj1AEeqzgpxG2553pg" name="fire fight" type="_et--4DkdEeq9QJJQLLZM_A" association="_JNAXgD1AEeqzgpxG2553pg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_7w8eYD1oEeqY1qS2JSZv1A" name="position_send" conveyed="_Xw6ikDygEeqttOmlBllrsQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_wzrb4DwxEeq9r43XwoIdDg" realization="_fMp7ID0_EeqzgpxG2553pg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_RgqTID1pEeqY1qS2JSZv1A" name="emergency_police" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_2oOC0DwwEeq9r43XwoIdDg" realization="_8b5cgD0_EeqzgpxG2553pg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ZMAOMD1pEeqY1qS2JSZv1A" name="emergency_car" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_g--CcDwwEeq9r43XwoIdDg" realization="_CakaYD1AEeqzgpxG2553pg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kgbIwD1pEeqY1qS2JSZv1A" name="emergency_CC" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_0JJ_YDwwEeq9r43XwoIdDg" realization="_T8ICED0_EeqzgpxG2553pg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_rtU0UD1pEeqY1qS2JSZv1A" name="emergency_FF" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_xX8cADwwEeq9r43XwoIdDg" realization="_JNAXgD1AEeqzgpxG2553pg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_4wGHED1pEeqY1qS2JSZv1A" name="emergency_SR" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_ZuuvADwwEeq9r43XwoIdDg" realization="_qoTfED0_EeqzgpxG2553pg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-DwZED1pEeqY1qS2JSZv1A" name="emergency_medical" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_tlooADwwEeq9r43XwoIdDg" realization="_wuEjcD0_EeqzgpxG2553pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_TI5qwDkgEeqtR9ldc2U3dA" name="Car Crane">
       <packagedElement xmi:type="uml:Class" xmi:id="_I4dvADkbEeq9QJJQLLZM_A" name="Car Crane">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_0JJ_YDwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_GgnfcDygEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_T8XSoD0_EeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_T8ICED0_EeqzgpxG2553pg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_WtvDcDkgEeqtR9ldc2U3dA" name="Medical">
       <packagedElement xmi:type="uml:Class" xmi:id="_CTC6MDkbEeq9QJJQLLZM_A" name="Medical">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_tlooADwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_QeTQkDygEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GCS-wD0vEeqqebxJtEajNg" name="asdasd"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wuGYoD0_EeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_wuEjcD0_EeqzgpxG2553pg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_aPKi0DkgEeqtR9ldc2U3dA" name="Search Resuce">
       <packagedElement xmi:type="uml:Class" xmi:id="_zizuIDkcEeq9QJJQLLZM_A" name="Search Resuce">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ZuuvADwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_MbEEoDygEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qoYXkD0_EeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_qoTfED0_EeqzgpxG2553pg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_h1xu4DkgEeqtR9ldc2U3dA" name="Relation">
@@ -141,6 +160,13 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_tmgyADkgEeqtR9ldc2U3dA" name="SoS">
       <packagedElement xmi:type="uml:Class" xmi:id="_qx3EoDkWEeq9QJJQLLZM_A" name="SoS">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6bY_QD3tEeqNWJXVtjCbLg">
+          <body>Eddy Navarrete&#xD;
+</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_DiuXMD3uEeqNWJXVtjCbLg">
+          <body>Eddy Navarrete</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_utvAITkdEeq9QJJQLLZM_A" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" aggregation="composite" association="_uttyADkdEeq9QJJQLLZM_A"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vc8PgTkdEeq9QJJQLLZM_A" name="police" type="_9ow8YDkaEeq9QJJQLLZM_A" aggregation="shared" association="_vc7BYDkdEeq9QJJQLLZM_A"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_wJksADkdEeq9QJJQLLZM_A" name="medical" type="_CTC6MDkbEeq9QJJQLLZM_A" aggregation="shared" association="_wJi20DkdEeq9QJJQLLZM_A"/>
@@ -233,6 +259,42 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_16WT8DyjEeqttOmlBllrsQ" name="state_vehicle" type="_rKIkkDyhEeqttOmlBllrsQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__hqo8DyiEeqttOmlBllrsQ" name="placa"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YHzgsD0xEeqqebxJtEajNg" name="image_thermographyc"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_T8ICED0_EeqzgpxG2553pg" name="assist_CC" memberEnd="_T8VdcD0_EeqzgpxG2553pg _T8XSoD0_EeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T8LscD0_EeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T8LscT0_EeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fMp7ID0_EeqzgpxG2553pg" name="assist_drone" memberEnd="_fMuzoD0_EeqzgpxG2553pg _fMxP4D0_EeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fMtlgD0_EeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fMuMkD0_EeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qoTfED0_EeqzgpxG2553pg" name="assist_SR" memberEnd="_qoWiYT0_EeqzgpxG2553pg _qoYXkD0_EeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qoV7UD0_EeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qoWiYD0_EeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wuEjcD0_EeqzgpxG2553pg" name="assist_medical" memberEnd="_wuFxkj0_EeqzgpxG2553pg _wuGYoD0_EeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wuFxkD0_EeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wuFxkT0_EeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8b5cgD0_EeqzgpxG2553pg" name="assist_police" memberEnd="_8b74wT0_EeqzgpxG2553pg _8b9t8D0_EeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8b7RsD0_EeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8b74wD0_EeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CakaYD1AEeqzgpxG2553pg" name="emergency_car" memberEnd="_CalogT1AEeqzgpxG2553pg _Calogj1AEeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CalBcD1AEeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CalogD1AEeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JNAXgD1AEeqzgpxG2553pg" name="assist_FF" memberEnd="_JNCMsj1AEeqzgpxG2553pg _JNCzwD1AEeqzgpxG2553pg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JNCMsD1AEeqzgpxG2553pg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JNCMsT1AEeqzgpxG2553pg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nl3pwDkWEeq9QJJQLLZM_A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nl8iQDkWEeq9QJJQLLZM_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -337,4 +399,11 @@
   <PortsAndFlows:FullPort xmi:id="_UrN1ADw0Eeq9r43XwoIdDg" base_Port="_UrI8gDw0Eeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_suNT8Dw0Eeq9r43XwoIdDg" base_Element="_suMs4Dw0Eeq9r43XwoIdDg" propertyPath="_54OioTkdEeq9QJJQLLZM_A" base_ConnectorEnd="_suMs4Dw0Eeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_suN7ADw0Eeq9r43XwoIdDg" base_Element="_suMs4Tw0Eeq9r43XwoIdDg" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_suMs4Tw0Eeq9r43XwoIdDg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_7xFoUD1oEeqY1qS2JSZv1A" base_InformationFlow="_7w8eYD1oEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:ItemFlow xmi:id="_RgvLoD1pEeqY1qS2JSZv1A" base_InformationFlow="_RgqTID1pEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:ItemFlow xmi:id="_ZMDRgD1pEeqY1qS2JSZv1A" base_InformationFlow="_ZMAOMD1pEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:ItemFlow xmi:id="_kgeMED1pEeqY1qS2JSZv1A" base_InformationFlow="_kgbIwD1pEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:ItemFlow xmi:id="_rtXQkD1pEeqY1qS2JSZv1A" base_InformationFlow="_rtU0UD1pEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:ItemFlow xmi:id="_4wH8QD1pEeqY1qS2JSZv1A" base_InformationFlow="_4wGHED1pEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:ItemFlow xmi:id="_-D1RkD1pEeqY1qS2JSZv1A" base_InformationFlow="_-DwZED1pEeqY1qS2JSZv1A"/>
 </xmi:XMI>
