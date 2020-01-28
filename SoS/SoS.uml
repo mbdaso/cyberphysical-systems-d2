@@ -32,10 +32,11 @@
     <packagedElement xmi:type="uml:Package" xmi:id="__kTCsDkfEeqtR9ldc2U3dA" name="Crash"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_EyXqEDkgEeqtR9ldc2U3dA" name="Car">
       <packagedElement xmi:type="uml:Class" xmi:id="_Gard8DkbEeq9QJJQLLZM_A" name="Car">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_g--CcDwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_g--CcDwwEeq9r43XwoIdDg" name="send_emergency_out" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9MsgMDyjEeqttOmlBllrsQ" name="information_car" type="_v88W0DyiEeqttOmlBllrsQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Calogj1AEeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_CakaYD1AEeqzgpxG2553pg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_EZ3_UEHYEeqM6eZ_DHBYDA" name="send_insident_ecall" conveyed="_Xw6ikDygEeqttOmlBllrsQ" informationSource="_g--CcDwwEeq9r43XwoIdDg" informationTarget="_udJCQEHXEeqM6eZ_DHBYDA" realization="_CakaYD1AEeqzgpxG2553pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_I3wyIDkgEeqtR9ldc2U3dA" name="Police">
       <packagedElement xmi:type="uml:Class" xmi:id="_9ow8YDkaEeq9QJJQLLZM_A" name="Police">
@@ -77,10 +78,10 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_8b74wT0_EeqzgpxG2553pg" name="police" type="_9ow8YDkaEeq9QJJQLLZM_A" association="_8b5cgD0_EeqzgpxG2553pg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_CalogT1AEeqzgpxG2553pg" name="car" type="_Gard8DkbEeq9QJJQLLZM_A" association="_CakaYD1AEeqzgpxG2553pg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_JNCMsj1AEeqzgpxG2553pg" name="fire fight" type="_et--4DkdEeq9QJJQLLZM_A" association="_JNAXgD1AEeqzgpxG2553pg"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_udJCQEHXEeqM6eZ_DHBYDA" name="emergency_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_7w8eYD1oEeqY1qS2JSZv1A" name="position_send" conveyed="_Xw6ikDygEeqttOmlBllrsQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_wzrb4DwxEeq9r43XwoIdDg" realization="_fMp7ID0_EeqzgpxG2553pg"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_RgqTID1pEeqY1qS2JSZv1A" name="emergency_police" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_2oOC0DwwEeq9r43XwoIdDg" realization="_8b5cgD0_EeqzgpxG2553pg"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ZMAOMD1pEeqY1qS2JSZv1A" name="emergency_car" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_g--CcDwwEeq9r43XwoIdDg" realization="_CakaYD1AEeqzgpxG2553pg"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kgbIwD1pEeqY1qS2JSZv1A" name="emergency_CC" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_0JJ_YDwwEeq9r43XwoIdDg" realization="_T8ICED0_EeqzgpxG2553pg"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_rtU0UD1pEeqY1qS2JSZv1A" name="emergency_FF" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_xX8cADwwEeq9r43XwoIdDg" realization="_JNAXgD1AEeqzgpxG2553pg"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_4wGHED1pEeqY1qS2JSZv1A" name="emergency_SR" conveyed="__b3NUDttEeqLqdbdR7J7TQ" informationSource="_PqVR4DwwEeq9r43XwoIdDg" informationTarget="_ZuuvADwwEeq9r43XwoIdDg" realization="_qoTfED0_EeqzgpxG2553pg"/>
@@ -179,10 +180,6 @@
           <end xmi:type="uml:ConnectorEnd" xmi:id="_6uQ1sDwxEeq9r43XwoIdDg" partWithPort="_54OioTkdEeq9QJJQLLZM_A" role="_wzrb4DwxEeq9r43XwoIdDg"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_6uRcwDwxEeq9r43XwoIdDg" partWithPort="_utvAITkdEeq9QJJQLLZM_A" role="_PqVR4DwwEeq9r43XwoIdDg"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_FWW1wDwyEeq9r43XwoIdDg" name="send_position_car">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_FWYD4DwyEeq9r43XwoIdDg" partWithPort="_wy4HsjkdEeq9QJJQLLZM_A" role="_g--CcDwwEeq9r43XwoIdDg"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_FWYq8DwyEeq9r43XwoIdDg" partWithPort="_utvAITkdEeq9QJJQLLZM_A" role="_PqVR4DwwEeq9r43XwoIdDg"/>
-        </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_OS56ADwyEeq9r43XwoIdDg" name="send_position_medical">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_OS6hEDwyEeq9r43XwoIdDg" partWithPort="_wJksADkdEeq9QJJQLLZM_A" role="_tlooADwwEeq9r43XwoIdDg"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_OS6hETwyEeq9r43XwoIdDg" partWithPort="_utvAITkdEeq9QJJQLLZM_A" role="_PqVR4DwwEeq9r43XwoIdDg"/>
@@ -206,6 +203,10 @@
         <ownedConnector xmi:type="uml:Connector" xmi:id="_suK3sDw0Eeq9r43XwoIdDg" name="send_image">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_suMs4Dw0Eeq9r43XwoIdDg" partWithPort="_54OioTkdEeq9QJJQLLZM_A" role="_UrI8gDw0Eeq9r43XwoIdDg"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_suMs4Tw0Eeq9r43XwoIdDg" partWithPort="_utvAITkdEeq9QJJQLLZM_A" role="_LTvIQDw0Eeq9r43XwoIdDg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_nKW7sEHYEeqM6eZ_DHBYDA" name="send_emergency">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_nKYw4EHYEeqM6eZ_DHBYDA" partWithPort="_wy4HsjkdEeq9QJJQLLZM_A" role="_g--CcDwwEeq9r43XwoIdDg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_nKZX8EHYEeqM6eZ_DHBYDA" partWithPort="_utvAITkdEeq9QJJQLLZM_A" role="_udJCQEHXEeqM6eZ_DHBYDA"/>
         </ownedConnector>
       </packagedElement>
     </packagedElement>
@@ -383,8 +384,6 @@
   <PortsAndFlows:FullPort xmi:id="_wzufMDwxEeq9r43XwoIdDg" base_Port="_wzrb4DwxEeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_6uSD0DwxEeq9r43XwoIdDg" base_Element="_6uQ1sDwxEeq9r43XwoIdDg" propertyPath="_54OioTkdEeq9QJJQLLZM_A" base_ConnectorEnd="_6uQ1sDwxEeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_6uTR8DwxEeq9r43XwoIdDg" base_Element="_6uRcwDwxEeq9r43XwoIdDg" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_6uRcwDwxEeq9r43XwoIdDg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_FWYq8TwyEeq9r43XwoIdDg" base_Element="_FWYD4DwyEeq9r43XwoIdDg" propertyPath="_wy4HsjkdEeq9QJJQLLZM_A" base_ConnectorEnd="_FWYD4DwyEeq9r43XwoIdDg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_FWZSADwyEeq9r43XwoIdDg" base_Element="_FWYq8DwyEeq9r43XwoIdDg" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_FWYq8DwyEeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_OS6hEjwyEeq9r43XwoIdDg" base_Element="_OS6hEDwyEeq9r43XwoIdDg" propertyPath="_wJksADkdEeq9QJJQLLZM_A" base_ConnectorEnd="_OS6hEDwyEeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_OS7IIDwyEeq9r43XwoIdDg" base_Element="_OS6hETwyEeq9r43XwoIdDg" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_OS6hETwyEeq9r43XwoIdDg"/>
   <Blocks:NestedConnectorEnd xmi:id="_R5tBkDwyEeq9r43XwoIdDg" base_Element="_R5sagDwyEeq9r43XwoIdDg" propertyPath="_Svl8cTksEeqtR9ldc2U3dA" base_ConnectorEnd="_R5sagDwyEeq9r43XwoIdDg"/>
@@ -401,9 +400,12 @@
   <Blocks:NestedConnectorEnd xmi:id="_suN7ADw0Eeq9r43XwoIdDg" base_Element="_suMs4Tw0Eeq9r43XwoIdDg" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_suMs4Tw0Eeq9r43XwoIdDg"/>
   <PortsAndFlows:ItemFlow xmi:id="_7xFoUD1oEeqY1qS2JSZv1A" base_InformationFlow="_7w8eYD1oEeqY1qS2JSZv1A"/>
   <PortsAndFlows:ItemFlow xmi:id="_RgvLoD1pEeqY1qS2JSZv1A" base_InformationFlow="_RgqTID1pEeqY1qS2JSZv1A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_ZMDRgD1pEeqY1qS2JSZv1A" base_InformationFlow="_ZMAOMD1pEeqY1qS2JSZv1A"/>
   <PortsAndFlows:ItemFlow xmi:id="_kgeMED1pEeqY1qS2JSZv1A" base_InformationFlow="_kgbIwD1pEeqY1qS2JSZv1A"/>
   <PortsAndFlows:ItemFlow xmi:id="_rtXQkD1pEeqY1qS2JSZv1A" base_InformationFlow="_rtU0UD1pEeqY1qS2JSZv1A"/>
   <PortsAndFlows:ItemFlow xmi:id="_4wH8QD1pEeqY1qS2JSZv1A" base_InformationFlow="_4wGHED1pEeqY1qS2JSZv1A"/>
   <PortsAndFlows:ItemFlow xmi:id="_-D1RkD1pEeqY1qS2JSZv1A" base_InformationFlow="_-DwZED1pEeqY1qS2JSZv1A"/>
+  <PortsAndFlows:FullPort xmi:id="_udWdoEHXEeqM6eZ_DHBYDA" base_Port="_udJCQEHXEeqM6eZ_DHBYDA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_EZ_UEEHYEeqM6eZ_DHBYDA" base_InformationFlow="_EZ3_UEHYEeqM6eZ_DHBYDA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nKZX8UHYEeqM6eZ_DHBYDA" base_Element="_nKYw4EHYEeqM6eZ_DHBYDA" propertyPath="_wy4HsjkdEeq9QJJQLLZM_A" base_ConnectorEnd="_nKYw4EHYEeqM6eZ_DHBYDA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nKamEEHYEeqM6eZ_DHBYDA" base_Element="_nKZX8EHYEeqM6eZ_DHBYDA" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_nKZX8EHYEeqM6eZ_DHBYDA"/>
 </xmi:XMI>
