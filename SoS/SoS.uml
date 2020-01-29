@@ -41,29 +41,46 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_1giZQ0HnEeqSz-cjHye_dg" type="_YpyhIEHLEeqSz-cjHye_dg" aggregation="composite" association="_1giZQEHnEeqSz-cjHye_dg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1gjAUUHnEeqSz-cjHye_dg" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_2KbDwkHnEeqSz-cjHye_dg" type="_YZWRYEHLEeqSz-cjHye_dg" aggregation="composite" association="_2KacsEHnEeqSz-cjHye_dg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_cPObIEHpEeqSz-cjHye_dg" name="car_gps" type="_YZWRYEHLEeqSz-cjHye_dg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_hbHRMEHpEeqSz-cjHye_dg" name="crash_sensors" type="_YpyhIEHLEeqSz-cjHye_dg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_mj3TsEHpEeqSz-cjHye_dg" name="e-call_button" type="_zxREwEHLEeqSz-cjHye_dg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_p39hsEHpEeqSz-cjHye_dg" name="radio_transmitter" type="_inSsEEHLEeqSz-cjHye_dg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_wERS8EHpEeqSz-cjHye_dg" name="car_info_storage" type="_rGXKIEHLEeqSz-cjHye_dg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cPObIEHpEeqSz-cjHye_dg" name="car_gps" visibility="public" type="_Xw6ikDygEeqttOmlBllrsQ" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FLbW0EKCEeq0YYtAQDVhaQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hbHRMEHpEeqSz-cjHye_dg" name="crash_sensors" type="_xWmxoEH2EeqSz-cjHye_dg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mj3TsEHpEeqSz-cjHye_dg" name="e-call_button" type="_-Wi9YEH3EeqSz-cjHye_dg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wERS8EHpEeqSz-cjHye_dg" name="car_info_storage" type="_v88W0DyiEeqttOmlBllrsQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4rKewEKCEeqIa5Wbps4M6g" type="_YZWRYEHLEeqSz-cjHye_dg" aggregation="composite" association="_4rFmQEKCEeqIa5Wbps4M6g"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_YZWRYEHLEeqSz-cjHye_dg" name="Car_GPS">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TTxRIEHrEeqSz-cjHye_dg" name="car_coordinates" type="_Xw6ikDygEeqttOmlBllrsQ"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_7CjboEJ8Eeq0YYtAQDVhaQ" name="coordinates_In" type="_Xw6ikDygEeqttOmlBllrsQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_CbPgcEJ9Eeq0YYtAQDVhaQ" name="coordinates_Out" type="_Xw6ikDygEeqttOmlBllrsQ" aggregation="composite"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_YpyhIEHLEeqSz-cjHye_dg" name="Crash_Sensors">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_emzEkEHrEeqSz-cjHye_dg" name="crash_info" type="_xWmxoEH2EeqSz-cjHye_dg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_3KXMoEJ9Eeq0YYtAQDVhaQ" name="crash_info_In" type="_xWmxoEH2EeqSz-cjHye_dg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_5b6_kEJ9Eeq0YYtAQDVhaQ" name="crash_info_Out" type="_xWmxoEH2EeqSz-cjHye_dg" aggregation="composite"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_inSsEEHLEeqSz-cjHye_dg" name="Radio_Transmitter">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_03tsdUHsEeqSz-cjHye_dg" type="_YZWRYEHLEeqSz-cjHye_dg" association="_03tFYEHsEeqSz-cjHye_dg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_2pnu8kHsEeqSz-cjHye_dg" type="_YpyhIEHLEeqSz-cjHye_dg" association="_2pmg0EHsEeqSz-cjHye_dg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5IXCQUHsEeqSz-cjHye_dg" type="_rGXKIEHLEeqSz-cjHye_dg" association="_5IV0IEHsEeqSz-cjHye_dg"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_6r878EHsEeqSz-cjHye_dg" type="_zxREwEHLEeqSz-cjHye_dg" association="_6r1nMEHsEeqSz-cjHye_dg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_K2Gz8EJ9Eeq0YYtAQDVhaQ" name="coordinates_In" type="_Xw6ikDygEeqttOmlBllrsQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_NriwAEJ9Eeq0YYtAQDVhaQ" name="car_info_In" type="_v88W0DyiEeqttOmlBllrsQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_A3sNkEJ-Eeq0YYtAQDVhaQ" name="button_status_In" type="_-Wi9YEH3EeqSz-cjHye_dg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_GA0DgEJ-Eeq0YYtAQDVhaQ" name="crash_info_In" type="_xWmxoEH2EeqSz-cjHye_dg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_NB9yEEJ-Eeq0YYtAQDVhaQ" name="car_info_Out" type="_v88W0DyiEeqttOmlBllrsQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_N3cBgEJ-Eeq0YYtAQDVhaQ" name="crash_info_Out" type="_xWmxoEH2EeqSz-cjHye_dg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_O7VugEJ-Eeq0YYtAQDVhaQ" name="button_status_Out" type="_-Wi9YEH3EeqSz-cjHye_dg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Pm1ikEJ-Eeq0YYtAQDVhaQ" name="coordinates_Out" aggregation="composite"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_rGXKIEHLEeqSz-cjHye_dg" name="Car_info_storage">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8dpsoEH4EeqSz-cjHye_dg" name="car_info" type="_v88W0DyiEeqttOmlBllrsQ"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_GIvs8EJ9Eeq0YYtAQDVhaQ" name="car_info_In" type="_v88W0DyiEeqttOmlBllrsQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ISzJsEJ9Eeq0YYtAQDVhaQ" name="car_info_Out" type="_v88W0DyiEeqttOmlBllrsQ" aggregation="composite"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_zxREwEHLEeqSz-cjHye_dg" name="e-Call_Button">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_d8mmIEHtEeqSz-cjHye_dg" name="e-button_status" type="_-Wi9YEH3EeqSz-cjHye_dg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lV-lAEJ9Eeq0YYtAQDVhaQ" name="button_status_In" type="_-Wi9YEH3EeqSz-cjHye_dg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_p-JqAEJ9Eeq0YYtAQDVhaQ" name="button_status_Out" type="_-Wi9YEH3EeqSz-cjHye_dg" aggregation="composite"/>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_zVSpsEHnEeqSz-cjHye_dg" memberEnd="_zVSps0HnEeqSz-cjHye_dg _zValgEHnEeqSz-cjHye_dg">
@@ -89,12 +106,6 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1giZQkHnEeqSz-cjHye_dg" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_1gjAUkHnEeqSz-cjHye_dg" type="_Gard8DkbEeq9QJJQLLZM_A" association="_1giZQEHnEeqSz-cjHye_dg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_2KacsEHnEeqSz-cjHye_dg" memberEnd="_2KbDwkHnEeqSz-cjHye_dg _2KbDxUHnEeqSz-cjHye_dg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2KbDwEHnEeqSz-cjHye_dg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2KbDwUHnEeqSz-cjHye_dg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_2KbDxUHnEeqSz-cjHye_dg" type="_Gard8DkbEeq9QJJQLLZM_A" association="_2KacsEHnEeqSz-cjHye_dg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_03tFYEHsEeqSz-cjHye_dg" name="sends coordinates" memberEnd="_03tsckHsEeqSz-cjHye_dg _03tsdUHsEeqSz-cjHye_dg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_03tscEHsEeqSz-cjHye_dg" source="org.eclipse.papyrus">
@@ -131,6 +142,12 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6r5RkEHsEeqSz-cjHye_dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6r7t0EHsEeqSz-cjHye_dg" value="1"/>
         </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4rFmQEKCEeqIa5Wbps4M6g" memberEnd="_4rKewEKCEeqIa5Wbps4M6g _4rOwMEKCEeqIa5Wbps4M6g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4rJQoEKCEeqIa5Wbps4M6g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4rJ3sEKCEeqIa5Wbps4M6g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4rOwMEKCEeqIa5Wbps4M6g" type="_Gard8DkbEeq9QJJQLLZM_A" association="_4rFmQEKCEeqIa5Wbps4M6g"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_I3wyIDkgEeqtR9ldc2U3dA" name="Police">
