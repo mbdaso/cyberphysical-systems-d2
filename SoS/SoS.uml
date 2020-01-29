@@ -25,6 +25,76 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_xX8cADwwEeq9r43XwoIdDg" name="position_in" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_6K_mkDyfEeqttOmlBllrsQ" name="emergencyInsident" type="__b3NUDttEeqLqdbdR7J7TQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_JNCzwD1AEeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_JNAXgD1AEeqzgpxG2553pg"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Ia4DoEKpEeqP_c0RDx2brA" name="Fire Fight">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mkx2cEKpEeqP_c0RDx2brA" name="fire station" type="_KdDWwEKpEeqP_c0RDx2brA" aggregation="composite" association="_mksW4EKpEeqP_c0RDx2brA">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mkx2ckKpEeqP_c0RDx2brA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GvpbckKqEeqP_c0RDx2brA" name="fire engine" type="_M-VnwEKpEeqP_c0RDx2brA" aggregation="composite" association="_GvoNUEKqEeqP_c0RDx2brA">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GvqCgEKqEeqP_c0RDx2brA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DpjXw0KrEeqP_c0RDx2brA" name="fire fighter" type="_8Qth8EKqEeqP_c0RDx2brA" aggregation="composite" association="_DpjXwEKrEeqP_c0RDx2brA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_KdDWwEKpEeqP_c0RDx2brA" name="Fire Station"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_M-VnwEKpEeqP_c0RDx2brA" name="Fire Engine">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rvfLUkKqEeqP_c0RDx2brA" name="firehose" type="_jpbqMEKqEeqP_c0RDx2brA" aggregation="composite" association="_rvekQEKqEeqP_c0RDx2brA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sQgNskKqEeqP_c0RDx2brA" name="ladder" type="_lklIQEKqEeqP_c0RDx2brA" aggregation="composite" association="_sQfmoEKqEeqP_c0RDx2brA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_jpbqMEKqEeqP_c0RDx2brA" name="Water system">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SUdF80KrEeqP_c0RDx2brA" name="fire hydrant" type="_nLbxUEKqEeqP_c0RDx2brA" aggregation="shared" association="_SUdF8EKrEeqP_c0RDx2brA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SUdF9EKrEeqP_c0RDx2brA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SUdF9UKrEeqP_c0RDx2brA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XQvZwkKrEeqP_c0RDx2brA" name="fire hose" type="_PGD3UEKrEeqP_c0RDx2brA" aggregation="composite" association="_XQuLoEKrEeqP_c0RDx2brA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XQwA0EKrEeqP_c0RDx2brA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XQwn4EKrEeqP_c0RDx2brA" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_lklIQEKqEeqP_c0RDx2brA" name="Ladder"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_nLbxUEKqEeqP_c0RDx2brA" name="Fire Hydrant"/>
+        <nestedClassifier xmi:type="uml:Actor" xmi:id="_8Qth8EKqEeqP_c0RDx2brA" name="Fire Fighter"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_PGD3UEKrEeqP_c0RDx2brA" name="Fire Hose"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mksW4EKpEeqP_c0RDx2brA" memberEnd="_mkx2cEKpEeqP_c0RDx2brA _mkx2c0KpEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mkwoUEKpEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mkxPYEKpEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mkx2c0KpEeqP_c0RDx2brA" name="fire fight" type="_Ia4DoEKpEeqP_c0RDx2brA" association="_mksW4EKpEeqP_c0RDx2brA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GvoNUEKqEeqP_c0RDx2brA" memberEnd="_GvpbckKqEeqP_c0RDx2brA _GvqCgUKqEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GvpbcEKqEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GvpbcUKqEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GvqCgUKqEeqP_c0RDx2brA" name="fire fight" type="_Ia4DoEKpEeqP_c0RDx2brA" association="_GvoNUEKqEeqP_c0RDx2brA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_rvekQEKqEeqP_c0RDx2brA" memberEnd="_rvfLUkKqEeqP_c0RDx2brA _rvfLVUKqEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rvfLUEKqEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rvfLUUKqEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_rvfLVUKqEeqP_c0RDx2brA" name="fire engine" type="_M-VnwEKpEeqP_c0RDx2brA" association="_rvekQEKqEeqP_c0RDx2brA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_sQfmoEKqEeqP_c0RDx2brA" visibility="private" memberEnd="_sQgNskKqEeqP_c0RDx2brA _sQgNtUKqEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sQgNsEKqEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQgNsUKqEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_sQgNtUKqEeqP_c0RDx2brA" name="fire engine" type="_M-VnwEKpEeqP_c0RDx2brA" association="_sQfmoEKqEeqP_c0RDx2brA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DpjXwEKrEeqP_c0RDx2brA" memberEnd="_DpjXw0KrEeqP_c0RDx2brA _Dpj-0kKrEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DpjXwUKrEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DpjXwkKrEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Dpj-0kKrEeqP_c0RDx2brA" name="fire fight" type="_Ia4DoEKpEeqP_c0RDx2brA" association="_DpjXwEKrEeqP_c0RDx2brA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SUdF8EKrEeqP_c0RDx2brA" memberEnd="_SUdF80KrEeqP_c0RDx2brA _SUdtAEKrEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SUdF8UKrEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SUdF8kKrEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_SUdtAEKrEeqP_c0RDx2brA" name="water system" type="_jpbqMEKqEeqP_c0RDx2brA" association="_SUdF8EKrEeqP_c0RDx2brA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XQuLoEKrEeqP_c0RDx2brA" memberEnd="_XQvZwkKrEeqP_c0RDx2brA _XQwn4UKrEeqP_c0RDx2brA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XQvZwEKrEeqP_c0RDx2brA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XQvZwUKrEeqP_c0RDx2brA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XQwn4UKrEeqP_c0RDx2brA" name="water system" type="_jpbqMEKqEeqP_c0RDx2brA" association="_XQuLoEKrEeqP_c0RDx2brA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2ub1QDkfEeqtR9ldc2U3dA" name="GPS"/>
@@ -408,4 +478,11 @@
   <PortsAndFlows:ItemFlow xmi:id="_EZ_UEEHYEeqM6eZ_DHBYDA" base_InformationFlow="_EZ3_UEHYEeqM6eZ_DHBYDA"/>
   <Blocks:NestedConnectorEnd xmi:id="_nKZX8UHYEeqM6eZ_DHBYDA" base_Element="_nKYw4EHYEeqM6eZ_DHBYDA" propertyPath="_wy4HsjkdEeq9QJJQLLZM_A" base_ConnectorEnd="_nKYw4EHYEeqM6eZ_DHBYDA"/>
   <Blocks:NestedConnectorEnd xmi:id="_nKamEEHYEeqM6eZ_DHBYDA" base_Element="_nKZX8EHYEeqM6eZ_DHBYDA" propertyPath="_utvAITkdEeq9QJJQLLZM_A" base_ConnectorEnd="_nKZX8EHYEeqM6eZ_DHBYDA"/>
+  <Blocks:Block xmi:id="_Ia7G8EKpEeqP_c0RDx2brA" base_Class="_Ia4DoEKpEeqP_c0RDx2brA"/>
+  <Blocks:Block xmi:id="_KdGaEEKpEeqP_c0RDx2brA" base_Class="_KdDWwEKpEeqP_c0RDx2brA"/>
+  <Blocks:Block xmi:id="_M-YrEEKpEeqP_c0RDx2brA" base_Class="_M-VnwEKpEeqP_c0RDx2brA"/>
+  <Blocks:Block xmi:id="_jpf7oEKqEeqP_c0RDx2brA" base_Class="_jpbqMEKqEeqP_c0RDx2brA"/>
+  <Blocks:Block xmi:id="_lkwucEKqEeqP_c0RDx2brA" base_Class="_lklIQEKqEeqP_c0RDx2brA"/>
+  <Blocks:Block xmi:id="_nLdmgEKqEeqP_c0RDx2brA" base_Class="_nLbxUEKqEeqP_c0RDx2brA"/>
+  <Blocks:Block xmi:id="_PGGTkEKrEeqP_c0RDx2brA" base_Class="_PGD3UEKrEeqP_c0RDx2brA"/>
 </xmi:XMI>
