@@ -56,7 +56,25 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_NeQcIDkgEeqtR9ldc2U3dA" name="Drone">
-      <packagedElement xmi:type="uml:Class" xmi:id="__ijIgDkaEeq9QJJQLLZM_A" name="Drone">
+      <packagedElement xmi:type="uml:Class" xmi:id="__ijIgDkaEeq9QJJQLLZM_A" name="DroneSystem">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_K3_sUEdJEeqE9vcZr0lsgQ">
+          <body>Carlos del Pozo&#xD;
+&#xD;
+*Controller is the software and hardware required to control the drone.&#xD;
+&#xD;
+*DroneSystem is the main control center of the system&#xD;
+&#xD;
+*Station is the structure where drones can be charged</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_swge4EdJEeqE9vcZr0lsgQ">
+          <body>Carlos del Pozo</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_uwCGoEdJEeqE9vcZr0lsgQ">
+          <body>Carlos del Pozo</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_wgZRAEdJEeqE9vcZr0lsgQ">
+          <body>Carlos del Pozo</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_wzrb4DwxEeq9r43XwoIdDg" name="position_inout" type="__b3NUDttEeqLqdbdR7J7TQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_UrI8gDw0Eeq9r43XwoIdDg" name="image_out" type="_Nf6XYDyhEeqttOmlBllrsQ" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="__6UEYDygEeqttOmlBllrsQ" name="position" type="_Xw6ikDygEeqttOmlBllrsQ"/>
@@ -64,15 +82,10 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kxmSwD0xEeqqebxJtEajNg" name="image" type="_YHzgsD0xEeqqebxJtEajNg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_fMxP4D0_EeqzgpxG2553pg" name="ecall" type="_vj20ADkWEeq9QJJQLLZM_A" association="_fMp7ID0_EeqzgpxG2553pg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_jR6kUEH1Eeqm9aD2qngl0Q" name="controller" type="_6CE_AEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_jR4vIEH1Eeqm9aD2qngl0Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jR8ZgEH1Eeqm9aD2qngl0Q"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jR-OsEH1Eeqm9aD2qngl0Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_th7xQEdIEeqE9vcZr0lsgQ" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_jxLTM0H1Eeqm9aD2qngl0Q" name="station" type="_z98SUEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_jxLTMEH1Eeqm9aD2qngl0Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jxO9kEH1Eeqm9aD2qngl0Q" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_sgcpEEH4Eeqm9aD2qngl0Q" name="droneVehicle2" type="_zqaSUEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_kQE1sEH1Eeqm9aD2qngl0Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IzjSUEH5Eeqm9aD2qngl0Q" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AH_QYEH5Eeqm9aD2qngl0Q" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_EAqVoEH6Eeqm9aD2qngl0Q" name="ThermographicalImagesOut" type="_YHzgsD0xEeqqebxJtEajNg" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_G9ZMgEH6Eeqm9aD2qngl0Q" name="ThermographicalImagesIn" type="_YHzgsD0xEeqqebxJtEajNg" aggregation="composite"/>
@@ -97,16 +110,12 @@
           <end xmi:type="uml:ConnectorEnd" xmi:id="_vsoNAEH_Eeqm9aD2qngl0Q" role="_EAqVoEH6Eeqm9aD2qngl0Q"/>
         </ownedConnector>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_zqaSUEBsEeqp4Kf5Fgu2KQ" name="Vehicle">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_O09_IEBtEeqp4Kf5Fgu2KQ" name="dron_camera" type="_0WYAcEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_wMPQYEBuEeqp4Kf5Fgu2KQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OyTFgEH1Eeqm9aD2qngl0Q"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_QUIEwEBtEeqp4Kf5Fgu2KQ" name="dron_battery" type="_z1L-8EBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_v05HYEBuEeqp4Kf5Fgu2KQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pg87QEH1Eeqm9aD2qngl0Q"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_wn7G0kBuEeqp4Kf5Fgu2KQ" name="gps" type="_0KUhcEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_wn6fwEBuEeqp4Kf5Fgu2KQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wn7t4EBuEeqp4Kf5Fgu2KQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wn7t4UBuEeqp4Kf5Fgu2KQ" value="1"/>
-          </ownedAttribute>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_yvAdoEdJEeqE9vcZr0lsgQ">
+            <body>Carlos del Pozo</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_O09_IEBtEeqp4Kf5Fgu2KQ" name="drone_camera" type="_0WYAcEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_wMPQYEBuEeqp4Kf5Fgu2KQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QUIEwEBtEeqp4Kf5Fgu2KQ" name="drone_battery" type="_z1L-8EBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_v05HYEBuEeqp4Kf5Fgu2KQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wn7G0kBuEeqp4Kf5Fgu2KQ" name="gps" type="_0KUhcEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_wn6fwEBuEeqp4Kf5Fgu2KQ"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_6A-EYEBvEeqp4Kf5Fgu2KQ" name="batteryLevelIn" type="_VMS_YEHzEeqm9aD2qngl0Q" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_8uqZsEBvEeqp4Kf5Fgu2KQ" name="ThermographicalImagesIn" type="_YHzgsD0xEeqqebxJtEajNg" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_AUmloEBwEeqp4Kf5Fgu2KQ" name="coordinatesIn" type="_Xw6ikDygEeqttOmlBllrsQ" aggregation="composite"/>
@@ -114,6 +123,10 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_2JZgcEBwEeqp4Kf5Fgu2KQ" name="batteryLevelOut" type="_VMS_YEHzEeqm9aD2qngl0Q" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_2vhFQEBwEeqp4Kf5Fgu2KQ" name="ThermographicalImagesOut" type="_YHzgsD0xEeqqebxJtEajNg" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_3ZJREEBwEeqp4Kf5Fgu2KQ" name="coordinatesOut" type="_Xw6ikDygEeqttOmlBllrsQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sgcpEEH4Eeqm9aD2qngl0Q" name="droneVehicle2" type="_zqaSUEBsEeqp4Kf5Fgu2KQ" aggregation="composite" association="_kQE1sEH1Eeqm9aD2qngl0Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IzjSUEH5Eeqm9aD2qngl0Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AH_QYEH5Eeqm9aD2qngl0Q" value="*"/>
+          </ownedAttribute>
           <ownedConnector xmi:type="uml:Connector" xmi:id="_50wwEEH-Eeqm9aD2qngl0Q" name="imagesCameraToDron">
             <end xmi:type="uml:ConnectorEnd" xmi:id="_501BgEH-Eeqm9aD2qngl0Q" partWithPort="_O09_IEBtEeqp4Kf5Fgu2KQ" role="_13vlMEBvEeqp4Kf5Fgu2KQ"/>
             <end xmi:type="uml:ConnectorEnd" xmi:id="_501BgUH-Eeqm9aD2qngl0Q" role="_8uqZsEBvEeqp4Kf5Fgu2KQ"/>
@@ -172,26 +185,19 @@
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jR59QEH1Eeqm9aD2qngl0Q" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jR59QUH1Eeqm9aD2qngl0Q" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_wqUogEH4Eeqm9aD2qngl0Q" name="" type="_6CE_AEBsEeqp4Kf5Fgu2KQ" association="_jR4vIEH1Eeqm9aD2qngl0Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6gKFMEH4Eeqm9aD2qngl0Q"/>
-        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wqUogEH4Eeqm9aD2qngl0Q" name="" type="_6CE_AEBsEeqp4Kf5Fgu2KQ" association="_jR4vIEH1Eeqm9aD2qngl0Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_jxLTMEH1Eeqm9aD2qngl0Q" visibility="private" memberEnd="_jxLTM0H1Eeqm9aD2qngl0Q _vWzyMEH4Eeqm9aD2qngl0Q">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jxLTMUH1Eeqm9aD2qngl0Q" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jxLTMkH1Eeqm9aD2qngl0Q" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_vWzyMEH4Eeqm9aD2qngl0Q" name="" type="_z98SUEBsEeqp4Kf5Fgu2KQ" association="_jxLTMEH1Eeqm9aD2qngl0Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MvXgQEH8Eeqm9aD2qngl0Q"/>
-        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_vWzyMEH4Eeqm9aD2qngl0Q" name="" type="_z98SUEBsEeqp4Kf5Fgu2KQ" association="_jxLTMEH1Eeqm9aD2qngl0Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_kQE1sEH1Eeqm9aD2qngl0Q" memberEnd="_sgcpEEH4Eeqm9aD2qngl0Q _kQFcwkH1Eeqm9aD2qngl0Q">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQFcwEH1Eeqm9aD2qngl0Q" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kQFcwUH1Eeqm9aD2qngl0Q" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_kQFcwkH1Eeqm9aD2qngl0Q" name="" type="_zqaSUEBsEeqp4Kf5Fgu2KQ" association="_kQE1sEH1Eeqm9aD2qngl0Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kQHR8EH1Eeqm9aD2qngl0Q"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kQJHIEH1Eeqm9aD2qngl0Q" value="1"/>
-        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_kQFcwkH1Eeqm9aD2qngl0Q" name="" type="_zqaSUEBsEeqp4Kf5Fgu2KQ" association="_kQE1sEH1Eeqm9aD2qngl0Q"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_QZ68ADkgEeqtR9ldc2U3dA" name="Ecall">
